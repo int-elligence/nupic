@@ -109,7 +109,12 @@ def setupNupic():
       "nupic.swarming.jsonschema": ["*.json"]
     },
     data_files=[
-      ("", ["CMakeLists.txt", "external/common/requirements.txt"])
+      ("", [
+        "CMakeLists.txt",
+        "external/common/requirements.txt",
+        "config/default/nupic-default.xml"
+        ]
+      )
     ],
     include_package_data = True,
     description = "Numenta Platform for Intelligent Computing",
